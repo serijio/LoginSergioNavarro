@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegisterScreen">
+
+    <ImageView
+        android:id="@+id/backgroundRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/logoRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ryodan_logo2"
+        android:transitionName="ryodanTrans2"
+        app:layout_constraintStart_toEndOf="@id/v7"
+        app:layout_constraintEnd_toStartOf="@id/v8"
+        app:layout_constraintTop_toBottomOf="@id/h4"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        />
+
+    <TextView
+        android:id="@+id/appNameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_login"
+        android:transitionName="crTrans2"
+        app:layout_constraintStart_toEndOf="@id/v7"
+        app:layout_constraintEnd_toStartOf="@id/v8"
+        app:layout_constraintTop_toBottomOf="@id/h5"
+        style="@style/TinyAppNameStyle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:transitionName="emailTrans"
+        app:layout_constraintTop_toBottomOf="@+id/h91"
+        app:layout_constraintStart_toEndOf="@id/v9"
+        app:layout_constraintEnd_toStartOf="@id/v10"
+        app:startIconDrawable="@drawable/ic_email"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/ToLoginButton"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:transitionName="userTrans"
+        app:layout_constraintTop_toBottomOf="@id/emailRegister"
+        app:layout_constraintStart_toEndOf="@id/v9"
+        app:layout_constraintEnd_toStartOf="@id/v10"
+        app:startIconDrawable="@drawable/ic_persona"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/ToLoginButton"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userRegister"
+        app:layout_constraintStart_toEndOf="@id/v9"
+        app:layout_constraintEnd_toStartOf="@id/v10"
+        app:startIconDrawable="@drawable/ic_key"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        style="@style/ToLoginButton"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confPassRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/passRegister"
+        app:layout_constraintStart_toEndOf="@id/v9"
+        app:layout_constraintEnd_toStartOf="@id/v10"
+        app:startIconDrawable="@drawable/ic_key"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        style="@style/ToLoginButton"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_pass"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerNowButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:transitionName="accTrans"
+        app:icon="@drawable/ic_addperson"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toEndOf="@id/backToLogin"
+        app:layout_constraintEnd_toStartOf="@id/v10"
+        app:layout_constraintTop_toBottomOf="@+id/h92"
+        app:layout_constraintWidth_percent="0.15"
+        style="@style/BothButtons2"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="loginTrans"
+        app:icon="@drawable/ic_return"
+        app:iconTint="#650303"
+        app:iconGravity="textStart"
+        android:text="@string/back_login"
+        app:layout_constraintStart_toEndOf="@id/v9"
+        app:layout_constraintEnd_toStartOf="@id/registerNowButton"
+        app:layout_constraintTop_toBottomOf="@+id/h92"
+        style="@style/BothButtons3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.461" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

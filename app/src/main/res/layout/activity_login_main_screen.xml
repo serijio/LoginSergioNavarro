@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginMainScreen">
+
+    <ImageView
+        android:id="@+id/backgroundLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.3" />
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ryodan_logo2"
+        android:transitionName="ryodanTrans"
+        app:layout_constraintStart_toStartOf="@id/v3"
+        app:layout_constraintEnd_toEndOf="@id/v4"
+        app:layout_constraintTop_toBottomOf="@id/h2"
+        app:layout_constraintBottom_toTopOf="@+id/h3"
+    />
+
+    <TextView
+        android:id="@+id/appNameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_login"
+        android:transitionName="crTrans"
+        app:layout_constraintEnd_toStartOf="@id/v4"
+        app:layout_constraintStart_toEndOf="@id/v3"
+        app:layout_constraintTop_toBottomOf="@id/h3"
+        style="@style/TinyAppNameStyle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:transitionName="usernameTrans"
+        app:layout_constraintTop_toBottomOf="@+id/h87"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:startIconDrawable="@drawable/ic_persona"
+        android:textColorHint="@color/white"
+        app:startIconTint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/ToLoginButton"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textColorHint="@color/white"
+            android:textSize="30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/h88"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        android:transitionName="passTrans"
+        app:startIconDrawable="@drawable/ic_key"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintWidth_percent="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        style="@style/ToLoginButton"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bilboinc"
+            android:textSize="30sp"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintTop_toBottomOf="@+id/h89"
+        app:layout_constraintEnd_toStartOf="@+id/noPassButton"
+        style="@style/CheckBox"
+
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/noPassButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pass"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintTop_toBottomOf="@+id/h90"
+        app:layout_constraintWidth_percent="0.4"
+        style="@style/alertDialog" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:transitionName="loginNowTrans"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/registerButton"
+        app:layout_constraintTop_toBottomOf="@id/h86"
+        app:layout_constraintWidth_percent="0.3"
+        style="@style/BothButtons"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:transitionName="registerTrans"
+        app:layout_constraintStart_toEndOf="@id/loginButton"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintTop_toBottomOf="@id/h86"
+        app:layout_constraintWidth_percent="0.3"
+        style="@style/BothButtons"/>
+
+    <TextView
+        android:id="@+id/authorLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/author_license"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/v3"
+        app:layout_constraintEnd_toStartOf="@id/v4"
+        app:layout_constraintTop_toBottomOf="@id/h85"
+        style="@style/AuthorLicense"
+    />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.575" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.699" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

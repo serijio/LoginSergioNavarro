@@ -1,0 +1,96 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <style name="AppNameStyle">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:fontFamily">@font/midorima</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="AuthorLicense">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="NormalType">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TinyAppNameStyle">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:fontFamily">@font/midorima</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ToLoginButton" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">#650303</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:fontFamily">@font/bilboinc</item>
+        <item name="shapeAppearance">@style/recShape</item>
+    </style>
+
+    <style name="MyTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="BothButtons" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#CFA1A1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/bilboinc</item>
+        <item name="shapeAppearance">@style/recShape</item>
+    </style>
+
+    <style name="BothButtons2" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#000000</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/bilboinc</item>
+        <item name="shapeAppearance">@style/recShape</item>
+    </style>
+
+    <style name="BothButtons3" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#FFFFFF</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/bilboinc</item>
+        <item name="shapeAppearance">@style/recShape</item>
+    </style>
+
+    <style name="recShape" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">5dp</item>
+    </style>
+
+    <style name="recShape2" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">#650303</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="alertDialog" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#00000000</item>
+        <item name="android:textColor">#650303</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="rippleColor">#CFA1A1</item>
+    </style>
+
+    <style name="text_recipient" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="boxBackgroundColor">#FFF6F6</item>
+        <item name="android:textColorHint">#650303</item>
+        <item name="shapeAppearance">@style/recShape</item>
+    </style>
+
+</resources>

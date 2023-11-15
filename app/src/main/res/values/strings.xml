@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Character\'s ranking</string>
+    <string name="name_screen">Character\'s\n ranking</string>
+    <string name="name_login">Character\'s ranking</string>
+    <string name="author_license">Sergio Navarro\n Character\'s ranking ©</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="checkbox">Remember me</string>
+    <string name="forgot_pass">I forgot my password</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="email">Email</string>
+    <string name="new_acc">Create account</string>
+    <string name="already_acc">Already have an account?</string>
+    <string name="back_login">Login</string>
+</resources>

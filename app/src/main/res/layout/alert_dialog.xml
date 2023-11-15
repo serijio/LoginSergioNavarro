@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/altertDef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce your email"
+        android:textColorHint="#650303"
+        android:textColor="#650303"
+        style="@style/text_recipient" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/altertDefTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:textColor="#650303" >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>
